@@ -140,114 +140,254 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div style="column-count: 3; column-gap: 20px;">
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert1.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<style>
+.gallery-container {
+  column-count: 3;
+  column-gap: 20px;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+</style>
+<div class="gallery-container">
+<div class="gallery-item">
+<img src="vert1.jpeg">
+<div class="caption">
+Santa Cruz, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert2.JPG" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert3.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert2.JPG">
+<div class="caption">
+Joshua Tree National Park, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="horiz1.JPEG" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert4.JPG" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert3.jpeg">
+<div class="caption">
+Mt Tamalpais State Park, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert5.JPG" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert6.JPG" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert4.JPG">
+<div class="caption">
+Mt Tamalpais State Park, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert7.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="horiz2.JPEG" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert5.JPG">
+<div class="caption">
+Yosemite National Park, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert8.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert9.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert6.JPG">
+<div class="caption">
+Yosemite National Park, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert10.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert11.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert7.jpeg">
+<div class="caption">
+Antelope Valley, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert12.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert13.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert8.jpeg">
+<div class="caption">
+Nojoqui Falls, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert14.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert15.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert9.jpeg">
+<div class="caption">
+Frisco, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert16.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert17.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="horiz1.JPEG">
+<div class="caption">
+Goleta Beach, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert18.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert19.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert10.jpeg">
+<div class="caption">
+Washington D.C.
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert20.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert21.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert11.jpeg">
+<div class="caption">
+CSU Mountain Campus, Pingree Park, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert22.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert23.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert12.jpeg">
+<div class="caption">
+Poudre River, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert24.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert25.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert13.jpeg">
+<div class="caption">
+Poudre River, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert26.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert27.JPG" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert14.jpeg">
+<div class="caption">
+Painted Caves, Santa Cruz Island, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert28.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert29.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert15.jpeg">
+<div class="caption">
+Clear Creek, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert30.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert31.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert16.jpeg">
+<div class="caption">
+Moraga, CA
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert32.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert33.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+<div class="gallery-item">
+<img src="vert17.jpeg">
+<div class="caption">
+Estes Park, CO
 </div>
-<div style="margin-bottom: 20px; break-inside: avoid;">
-<img src="vert34.jpeg" style="width: 100%; height: auto; border-radius: 8px;">
+</div>
+<div class="gallery-item">
+<img src="vert18.jpeg">
+<div class="caption">
+Ventura Pier Beach, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert19.jpeg">
+<div class="caption">
+Rattlesnake Canyon Park, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert20.jpeg">
+<div class="caption">
+Fort Collins, CO
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert21.jpeg">
+<div class="caption">
+Mendocino, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert22.jpeg">
+<div class="caption">
+Fort Collins, CO
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert23.jpeg">
+<div class="caption">
+Navarro Point Preserve, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert24.jpeg">
+<div class="caption">
+Goleta, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="horiz2.JPEG">
+<div class="caption">
+El Pescador State Beach, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert25.jpeg">
+<div class="caption">
+Isla Vista, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert26.jpeg">
+<div class="caption">
+Oceano Dunes, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert27.JPG">
+<div class="caption">
+Richardson Bay, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert28.jpeg">
+<div class="caption">
+Joshua Tree National Park, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert29.jpeg">
+<div class="caption">
+Hill Canyon, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert30.jpeg">
+<div class="caption">
+Los Padres National Forest, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert31.jpeg">
+<div class="caption">
+Coal Oil Point, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert32.jpeg">
+<div class="caption">
+Russian River, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert33.jpeg">
+<div class="caption">
+Santa Cruz, CA
+</div>
+</div>
+<div class="gallery-item">
+<img src="vert34.jpeg">
+<div class="caption">
+Tangerine Falls, CA
+</div>
 </div>
 </div>
 
